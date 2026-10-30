@@ -178,6 +178,7 @@ a:focus-visible{outline:3px solid #74b8e8;outline-offset:4px;border-radius:3px}
 .contact-options a>span{color:var(--blue);font-size:12px;font-weight:700}
 .contact-options strong{display:flex;align-items:center;justify-content:space-between;gap:15px;color:var(--navy);font-size:17px}
 .contact-options strong span{font-size:21px}
+.contact-options small{color:#60778a;font-size:11px;line-height:1.6}
 .site-footer{background:#10283f;color:#fff;padding:28px 0}
 .footer-inner{display:flex;justify-content:space-between;align-items:center;gap:24px}
 .footer-brand{font-size:14px;font-weight:800;letter-spacing:.07em}

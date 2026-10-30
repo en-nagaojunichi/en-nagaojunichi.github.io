@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="950" viewBox="0 0 800 950" role="img" aria-labelledby="title desc">
+  <title id="title">動画生成と結果通知の流れ</title>
+  <desc id="desc">ブラウザからLaravelで入力・権限・利用枠を確認し、Queueで動画生成を実行。レンダリング後に検査・保存し、別ジョブで結果をメール通知。処理状態はMySQLで管理して画面から取得する。</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="none" stroke="#7b96a4" stroke-width="1.5"/></marker></defs>
+  <rect x="1" y="1" width="798" height="948" rx="10" fill="#f5f8fa" stroke="#d6e1e7"/>
+  <g font-family="Noto Sans JP, Meiryo, sans-serif" fill="#294657">
+    <text x="40" y="53" font-size="26" font-weight="700">動画生成と結果通知の流れ</text>
+    <g text-anchor="middle">
+      <rect x="40" y="86" width="720" height="110" rx="8" fill="#fff" stroke="#ccdbe3"/>
+      <text x="400" y="133" font-size="30" font-weight="700">ブラウザ / Vue・Inertia.js</text>
+      <text x="400" y="171" font-size="25" fill="#5b7382">入力・生成状況の確認</text>
+      <path d="M400 200v35" stroke="#7b96a4" stroke-width="2" marker-end="url(#arrow)"/>
+      <rect x="40" y="250" width="720" height="110" rx="8" fill="#f0e5df" stroke="#d7c3b8"/>
+      <text x="400" y="297" font-size="32" font-weight="700">Laravel</text>
+      <text x="400" y="335" font-size="25">入力・権限・利用枠を確認</text>
+      <path d="M400 364v35" stroke="#7b96a4" stroke-width="2" marker-end="url(#arrow)"/>
+      <rect x="40" y="414" width="720" height="110" rx="8" fill="#e2ecf1" stroke="#bfd2dd"/>
+      <text x="400" y="461" font-size="32" font-weight="700">Queue</text>
+      <text x="400" y="499" font-size="25">動画生成を非同期で実行</text>
+      <path d="M400 528v35" stroke="#7b96a4" stroke-width="2" marker-end="url(#arrow)"/>
+      <rect x="40" y="578" width="720" height="110" rx="8" fill="#fff" stroke="#ccdbe3"/>
+      <text x="400" y="625" font-size="28" font-weight="700">動画レンダリング → 検査 → 保存</text>
+      <text x="400" y="663" font-size="25" fill="#5b7382">生成物を確認して、提供できる状態へ</text>
+      <path d="M400 692v35" stroke="#7b96a4" stroke-width="2" marker-end="url(#arrow)"/>
+      <rect x="40" y="742" width="720" height="110" rx="8" fill="#19313f"/>
+      <text x="400" y="789" font-size="29" font-weight="700" fill="#f6f5ef">通知ジョブ → メール通知</text>
+      <text x="400" y="827" font-size="25" fill="#cadce5">完成・最終失敗を利用者へ案内</text>
+    </g>
+    <text x="40" y="902" font-size="25" fill="#5b7382">処理状態はMySQLで管理し、画面から進捗を取得。</text>
+  </g>
+</svg>

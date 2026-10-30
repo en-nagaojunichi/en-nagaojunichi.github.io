@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://en-nagaojunichi.github.io/sitemap.xml

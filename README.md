@@ -1,10 +1,10 @@
-# Laravel・Flutter エンジニアの個人ポートフォリオ
+# ITエンジニアの個人ポートフォリオ
 
 PHP・Laravel の既存システム改修とデータ移行、Flutter の iOS・Android アプリ開発。調査、設計、実装、テスト、本番公開まで担当してきた内容を紹介します。
 
 **サイト:** https://en-nagaojunichi.github.io/
 
-![Laravel・Flutter エンジニアのポートフォリオ](assets/og-portfolio.png)
+![ITエンジニアのポートフォリオ](assets/og-portfolio.png)
 
 ## 見ていただきたい事例
 
@@ -18,7 +18,7 @@ PHP・Laravel の既存システム改修とデータ移行、Flutter の iOS・
 
 ## このリポジトリについて
 
-GitHub Pages 用の静的サイトです。HTML/CSS で作成し、PC・スマートフォンの表示を確認しています。
+このリポジトリには、個人ポートフォリオサイトのHTML、CSS、画像を収録しています。
 
 ### 構成
 
@@ -27,15 +27,3 @@ GitHub Pages 用の静的サイトです。HTML/CSS で作成し、PC・スマ�
 - `projects/flutter.html` — Flutter / 公開アプリ 3 本の実装事例
 - `styles.css` — 共通スタイル
 - `assets/` — 自身が開発したサービス・アプリの画面と図
-
-## ローカル確認
-
-Python が入っている場合は、このディレクトリで `python -m http.server 4175` を実行し、`http://localhost:4175/` を開きます。`file://` ではルート相対パスの画像・CSS が読み込まれません。
-
-## 公開
-
-`main` ブランチに反映後、GitHub リポジトリの **Settings → Pages → Build and deployment → Deploy from a branch** で `main` / `/(root)` を選択します。
-
-公開 URL: https://en-nagaojunichi.github.io/
-
-各サービス・アプリ本体のソースコードや顧客案件のデータは、このリポジトリには含めていません。

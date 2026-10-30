@@ -228,7 +228,7 @@ a:focus-visible{outline:3px solid #74b8e8;outline-offset:4px;border-radius:3px}
 .case-hero .case-meta strong{color:var(--navy);font-size:12px;line-height:1.55}
 .case-hero .case-visual p{margin:0;padding:10px 16px;border-top:1px solid var(--line);background:#fff;color:var(--muted);font-size:11px}
 .case-meta-wrap{background:var(--navy);color:#fff}
-.case-meta-wrap .case-meta{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;padding:0}
+.case-meta-wrap .case-meta{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-inline:auto;padding:0}
 .case-meta-wrap .case-meta>div{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;min-height:104px;padding:20px 16px;border-bottom:0;text-align:center}
 .case-meta-wrap .case-meta>div+div{border-left:1px solid #557089}
 .case-meta-wrap .case-meta span{display:block;color:#a9c6da;font-size:12px;font-weight:800;letter-spacing:.06em;line-height:1.3}

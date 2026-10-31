@@ -1,29 +1,16 @@
-# ITエンジニアの個人ポートフォリオ
+# ITエンジニアのポートフォリオ
 
-PHP・Laravel の既存システム改修とデータ移行、Flutter の iOS・Android アプリ開発。調査、設計、実装、テスト、本番公開まで担当してきた内容を紹介します。
+業務の話を聞き、既存の仕組みを調べ、必要なものをつくる。Webシステムの改修やデータ移行、アプリの設計・開発・公開まで担当しています。
 
-**サイト:** https://en-nagaojunichi.github.io/
+**[ポートフォリオを見る](https://en-nagaojunichi.github.io/)** · [仕事の相談](https://en-nagaojunichi.github.io/#contact)
 
-![ITエンジニアのポートフォリオ](assets/og-portfolio.png)
+![ポートフォリオの紹介画像](assets/og-portfolio-sales.png)
 
-## 見ていただきたい事例
+## 公開している仕事
 
-| 事例 | 実装・公開内容 |
-| --- | --- |
-| [MameAd / Laravel](https://en-nagaojunichi.github.io/projects/mamead.html) | 動画生成の Queue 処理、生成結果の検査・アクセス制御、メール通知、テスト |
-| [Flutter アプリ 3 本](https://en-nagaojunichi.github.io/projects/flutter.html) | 写真編集、音楽のオフライン再生、オンラインランキング付きゲーム。いずれも iOS・Android で公開 |
-| [SEO・MEO 診断ツール](https://mameoffice.com/free-tools/) | 公開ページと店舗案内の確認ツール、計 17 本 |
+- **[MameAd](projects/mamead.html)** — 店舗・事業者向けのWebサービス。紹介ページ、動画、SNS素材の作成から公開後の管理まで。 [サービスを見る](https://mamead.mameoffice.com/)
+- **[Flutterアプリ3本](projects/flutter.html)** — 写真編集の「パシャコマ」、音楽再生の「いつでもクラシック」、ゲームの「金庫スプリント」。いずれもApp StoreとGoogle Playで公開しています。
+- **[業務画面の公開用サンプル](projects/nextjs.html)** — Next.jsで制作した画面と、設計時に考えたことを紹介します。
+- **[SEO・MEOの無料診断ツール](https://mameoffice.com/free-tools/)** — 公開・運用している17本のツールです。
 
-サイトでは、画面と技術の両面から担当内容を説明しています。受託開発のご相談は[見積依頼フォーム](https://cockpit.mameoffice.com/quote-request)、準委任・チーム開発のご相談はサイト内の連絡先から受け付けています。
-
-## このリポジトリについて
-
-このリポジトリには、個人ポートフォリオサイトのHTML、CSS、画像を収録しています。
-
-### 構成
-
-- `index.html` — プロフィール、開発事例、技術領域、相談先
-- `projects/mamead.html` — Laravel / MameAd の設計・実装事例
-- `projects/flutter.html` — Flutter / 公開アプリ 3 本の実装事例
-- `styles.css` — 共通スタイル
-- `assets/` — 自身が開発したサービス・アプリの画面と図
+アプリのストアリンクや担当範囲は、各事例ページにまとめています。

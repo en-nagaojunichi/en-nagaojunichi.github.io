@@ -3,94 +3,79 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#132c46">
-  <meta name="description" content="LaravelによるWebシステムとFlutterによるiOS・Androidアプリの個人ポートフォリオ。MameAd、公開アプリ3本、SEO・MEO診断ツール、小規模Webサービスの設計・実装・運用を紹介します。">
+  <meta name="theme-color" content="#173732">
+  <meta name="description" content="長尾純一のITエンジニアポートフォリオ。顧客との対話、要件整理、既存システム改修、データ移行、Web・AI機能、iOS・Androidアプリを設計から公開・運用まで担当します。">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ja_JP">
-  <meta property="og:title" content="ITエンジニア | 個人ポートフォリオ">
-  <meta property="og:description" content="業務の複雑さを、使いやすい仕組みへ。WebシステムとiOS・Androidアプリの設計・開発・運用事例。">
+  <meta property="og:title" content="長尾純一 | ITエンジニア">
+  <meta property="og:description" content="業務を聞き、整理し、使える仕組みまでつくる。顧客対応から設計・実装・公開後の改善まで。">
   <meta property="og:url" content="https://en-nagaojunichi.github.io/">
-  <meta property="og:image" content="https://en-nagaojunichi.github.io/assets/og-portfolio.png">
+  <meta property="og:image" content="https://en-nagaojunichi.github.io/assets/og-portfolio-sales.png">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://en-nagaojunichi.github.io/">
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css">
-  <title>ITエンジニア | 個人ポートフォリオ</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./home-sales.css">
+  <title>長尾純一 | ITエンジニア・個人ポートフォリオ</title>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"長尾純一","jobTitle":"ITエンジニア","url":"https://en-nagaojunichi.github.io/","sameAs":["https://github.com/en-nagaojunichi","https://mameoffice.com/"]}</script>
 </head>
 <body>
   <a class="skip-link" href="#main">本文へ移動</a>
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="./index.html" aria-label="ポートフォリオ トップ"><span class="brand-mark" aria-hidden="true">&lt;/&gt;</span><span>ENGINEER<span class="brand-accent">.</span><small>PORTFOLIO</small></span></a>
-      <nav class="main-nav" aria-label="メインナビゲーション"><a href="#works">WORKS</a><a href="#tools">WEB TOOLS</a><a href="#skills">SKILLS</a><a href="#contact">CONTACT</a></nav>
-      <a class="header-link" href="https://github.com/en-nagaojunichi" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+    <div class="wrap header-inner">
+      <a class="brand" href="./index.html" aria-label="長尾純一 ポートフォリオ トップ"><span class="brand-symbol">JN<span>.</span></span><span class="brand-text">JUNICHI NAGAO<small>IT ENGINEER / PORTFOLIO</small></span></a>
+      <nav class="main-nav" aria-label="メインナビゲーション"><a href="#what-i-do">仕事内容</a><a href="#works">開発事例</a><a href="#technology">技術選定</a><a href="#contact">お問い合わせ</a></nav>
+      <a class="header-cta" href="#contact">開発を相談する <span aria-hidden="true">↗</span></a>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow"><span aria-hidden="true"></span>ITエンジニア / PORTFOLIO</p>
-          <h1 id="hero-title"><span class="heading-line">仕様を読み解く。</span><em><span class="heading-line">Webもアプリも、</span><span class="heading-line">公開まで。</span></em></h1>
-          <p class="hero-lead">PHP・Laravelの既存システム改修とデータ移行。<span class="nowrap">FlutterでiOS・Androidアプリを開発。</span>調査、設計、実装、テスト、本番公開まで担当します。</p>
-          <div class="hero-actions"><a class="button button-primary" href="#works">開発事例を見る <span aria-hidden="true">↘</span></a><a class="text-link" href="#contact">仕事の相談をする <span aria-hidden="true">↗</span></a></div>
-          <dl class="hero-proof"><div><dt>受託開発の納品</dt><dd>88<span>件</span></dd></div><div><dt>公開アプリ</dt><dd>03<span>本</span></dd></div><div><dt>無料診断ツール</dt><dd>17<span>本</span></dd></div></dl>
-          <p class="hero-proof-note">受託納品件数は2026年8月時点の集計です。</p>
-        </div>
-        <div class="hero-art" aria-label="公開中のFlutterアプリの実画面">
-          <div class="hero-art-top"><span>SELECTED MOBILE WORK</span><span>iOS / Android</span></div>
-          <div class="hero-phones">
-            <figure class="hero-phone hero-phone-left"><div class="phone-screen"><img src="./assets/pashakoma-ui.png" alt="パシャコマの漫画編集画面" width="1320" height="2868" fetchpriority="high"></div><figcaption>パシャコマ</figcaption></figure>
-            <figure class="hero-phone hero-phone-center"><div class="phone-screen"><img src="./assets/itsudemoclassic-ui.png" alt="いつでもクラシックの楽曲一覧画面" width="1080" height="2340" fetchpriority="high"></div><figcaption>いつでもクラシック</figcaption></figure>
-            <figure class="hero-phone hero-phone-right"><div class="phone-screen"><img src="./assets/kinko-sprint-ui.png" alt="金庫スプリントのダイヤル操作画面" width="1080" height="2340" fetchpriority="high"></div><figcaption>金庫スプリント</figcaption></figure>
-          </div>
-          <p class="hero-art-note">App Store・Google Playで公開中</p>
-        </div>
+    <section class="hero" aria-labelledby="hero-title"><div class="wrap hero-layout">
+      <div class="hero-copy"><p class="eyebrow"><span class="eyebrow-line"></span> 長尾純一 / IT ENGINEER</p>
+        <h1 id="hero-title"><span class="hero-line">業務を聞き、<wbr>整理する。</span><span class="hero-line"><em>使える仕組みを<wbr>つくる。</em></span></h1>
+        <p class="hero-lead">顧客との対話から要件整理、設計、実装、テスト、公開後の改善まで。既存環境を読み解き、WebシステムやiOS・Androidアプリを必要な範囲から形にします。</p>
+        <div class="hero-actions"><a class="button button-primary" href="#contact">開発を相談する <span aria-hidden="true">↗</span></a><a class="text-link" href="#works">担当事例を見る <span aria-hidden="true">↘</span></a></div>
+        <p class="hero-availability"><span aria-hidden="true"></span>受託開発・準委任のご相談に対応</p>
       </div>
-    </section>
+      <div class="hero-visual" aria-label="公開用に独立制作したNext.js業務画面サンプル"><div class="hero-visual-head"><span>NEXT.JS / PUBLIC SAMPLE</span><span class="hero-visual-dot">● ● ●</span></div><img src="./assets/nextjs-public-sample.png" alt="公開用に独立制作したNext.js業務画面サンプル。架空データを使用" width="1500" height="938" fetchpriority="high"><div class="hero-visual-bottom"><div><b>Web systems</b><span>画面・API・データ・AI活用</span></div><div class="visual-divider"></div><div><b>Mobile apps</b><span>iOS・Androidで公開</span></div></div></div>
+    </div></section>
 
-    <section class="intro-band" aria-label="開発で大切にしていること"><div class="container intro-band-inner"><span>WHAT I DO</span><p>既存コードや曖昧な仕様を読み解き、使う人の操作と運用を見据えて形にします。</p><a href="#approach">進め方を見る <span aria-hidden="true">↘</span></a></div></section>
+    <div class="proof-strip"><div class="wrap proof-inner"><p>担当してきた仕事と、公開している制作物</p><dl><div><dt>IT実務</dt><dd>約15年</dd></div><div><dt>受託納品</dt><dd>88件</dd></div><div><dt>公開アプリ</dt><dd>3本</dd></div></dl><small>実務年数・受託納品件数は2026年8月時点の集計。</small></div></div>
 
-    <section class="profile-section" id="profile" aria-labelledby="profile-title"><div class="container profile-grid"><div><p class="section-kicker">PROFILE / WHAT I CAN OWN</p><h2 id="profile-title"><span class="heading-line">コードの調査から、</span><span class="heading-line">任せてください。</span></h2><p class="profile-summary">IT実務経験は約15年。既存システムの調査から、新しいWebサービス・アプリの公開まで取り組んできました。</p><p class="profile-note">IT実務経験：約15年（2026年8月時点）</p></div><div class="profile-copy"><h3>任せられる仕事</h3><ul class="profile-offers"><li><span>01</span><div><strong>既存PHP・Laravelの調査と改修</strong><p>画面・コード・DBを確認し、曖昧な仕様を整理して変更します。</p></div></li><li><span>02</span><div><strong>データ移行と整合性の確認</strong><p>CSV仕様、旧データ、新DB設計を突き合わせて移行します。</p></div></li><li><span>03</span><div><strong>Flutterアプリの開発・公開</strong><p>iOS・Androidの実装、テスト、ストア申請・更新まで対応します。</p></div></li></ul></div></div></section>
+    <section class="section offer-section" id="what-i-do" aria-labelledby="offer-title"><div class="wrap"><div class="section-head"><p class="section-label">01 / WHAT I CAN OWN</p><h2 id="offer-title">仕様が決まっていない相談から、<br>公開後の改善まで。</h2><p>ご担当者の言葉から業務の流れと困りごとを整理し、決めるべき点、着手順、リスクを共有します。実装中も画面と動作で確認いただき、運用に乗るところまで担当します。</p></div>
+      <div class="offer-grid">
+        <article><span class="offer-no">01 / COMMUNICATION</span><div class="offer-icon" aria-hidden="true">◎</div><h3>顧客対応・要件整理</h3><p>利用者と担当者の話を聞き、目的、現状、必要な変更を整理。仕様が曖昧な部分は選択肢と影響を示して進めます。</p></article>
+        <article><span class="offer-no">02 / LEGACY & DATA</span><div class="offer-icon" aria-hidden="true">≡</div><h3>既存システム・データ移行</h3><p>画面、コード、DB、CSV仕様を突き合わせ、既存の動作を確認。改修やデータ移行を段階的に進めます。</p></article>
+        <article><span class="offer-no">03 / WEB & AI</span><div class="offer-icon" aria-hidden="true">{ }</div><h3>Web・API・AI機能</h3><p>業務画面、API、権限、非同期処理を設計。生成AIを使う機能は、人が確認する工程も含めて組み立てます。</p></article>
+        <article><span class="offer-no">04 / MOBILE</span><div class="offer-icon" aria-hidden="true">▣</div><h3>スマホアプリ・公開運用</h3><p>画像加工、音声再生、端末保存、サーバー連携。iOS・Androidのストア公開と更新まで経験しています。</p></article>
+      </div>
+    </div></section>
 
-    <section class="section works-section" id="works" aria-labelledby="works-title"><div class="container">
-      <div class="section-heading"><div><p class="section-kicker">01 / SELECTED WORK</p><h2 id="works-title"><span class="heading-line">公開している、</span><span class="heading-line">開発の実例。</span></h2></div><p>画面の裏側にある設計、保存、通信、テストまで担当しています。</p></div>
-      <article class="featured-work">
-        <div class="featured-image"><img src="./assets/mamead-visual.webp" alt="MameAdの紹介ページ、15秒動画、SNS画像、投稿文のサービス紹介ビジュアル" width="886" height="550" loading="lazy"><span class="image-caption">MAMEAD / WEB SERVICE</span></div>
-        <div class="featured-content"><p class="work-index">WEB SERVICE <span>— 01</span></p><h3>MameAd <small>マメアド</small></h3><p class="work-subtitle">お店・事業者向けの無料販促ツール</p><p>紹介ホームページ、15秒PR動画、SNS画像、投稿文を作成できるWebサービス。企画・画面とDBの設計から、実装、テスト、公開後の運用まで担当しています。</p><ul class="work-points"><li>Laravel Queueで動画生成を画面の応答から分離</li><li>生成結果のアクセス制御、通知、失敗時の回復を設計</li><li>Pest・Larastan・Playwrightなどで品質を確認</li></ul><div class="tag-list" aria-label="使用技術"><span>Laravel 12</span><span>Vue 3</span><span>TypeScript</span><span>MySQL</span><span>Queue</span></div><div class="work-links"><a class="button button-dark" href="./projects/mamead.html">設計・実装を見る <span aria-hidden="true">↗</span></a><a class="text-link" href="https://mamead.mameoffice.com/" target="_blank" rel="noopener noreferrer">サービスを開く <span aria-hidden="true">↗</span></a></div></div>
-      </article>
-      <div class="subsection-heading"><div><span class="line-label">MOBILE APPLICATIONS</span><h3>iOS・Androidで公開した3本</h3></div><a href="./projects/flutter.html">Flutterの実装内容を見る <span aria-hidden="true">↗</span></a></div>
+    <section class="section works-section" id="works" aria-labelledby="works-title"><div class="wrap"><div class="section-head section-head-row"><div><p class="section-label">02 / SELECTED WORK</p><h2 id="works-title">実装だけで終わらない、<br>開発の事例。</h2></div><p>公開サービスと公開用サンプルから、担当範囲と技術を具体的に紹介します。</p></div>
+      <article class="work-feature work-mamead"><div class="work-image"><img src="./assets/mamead-visual.webp" alt="MameAdの事業紹介ページ、動画、SNS素材のビジュアル" width="886" height="550" loading="lazy"></div><div class="work-copy"><p class="work-type">01 / PUBLIC WEB SERVICE</p><h3>MameAd <small>マメアド</small></h3><p class="work-tagline">店舗・事業者向けの販促ツールを、企画から運用まで。</p><p>事業紹介ホームページ、15秒PR動画、SNS画像、投稿文を作成できるWebサービス。画面とDBの設計から、生成処理、権限、通知、テスト、本番公開まで担当しています。</p><ul class="chip-list"><li>Laravel</li><li>Vue 3</li><li>MySQL</li><li>Queue</li><li>Playwright</li></ul><div class="work-actions"><a class="button button-dark" href="./projects/mamead.html">事例を見る ↗</a><a class="plain-link" href="https://mamead.mameoffice.com/" target="_blank" rel="noopener noreferrer">公開サービス ↗</a></div></div></article>
+      <article class="work-feature work-next"><div class="work-image sample-image"><img src="./assets/nextjs-public-sample.png" alt="Next.jsで独立制作した業務画面の公開用サンプル。内容はすべて架空" width="1500" height="980" loading="lazy"><span>INDEPENDENT PUBLIC SAMPLE</span></div><div class="work-copy"><p class="work-type">02 / NEXT.JS & AI</p><h3>業務画面とAI活用</h3><p class="work-tagline">情報を整理し、人が判断できる画面に。</p><p>Next.jsを用いた業務画面の構成例を、公開用に独立制作しました。実務で扱う画面・API・DB・AI機能の経験を、架空のデータと別デザインで紹介します。</p><p class="sample-note">掲載画像には実案件の画面・データ・デザインを使用していません。</p><ul class="chip-list"><li>Next.js</li><li>TypeScript</li><li>API</li><li>AI支援</li></ul><div class="work-actions"><a class="button button-dark" href="./projects/nextjs.html">画面と担当領域を見る ↗</a></div></div></article>
+      <div class="apps-heading"><div><p class="section-label">03 / RELEASED MOBILE APPS</p><h3>ストアで公開中の3本。</h3></div><a class="plain-link" href="./projects/flutter.html">アプリ開発の詳細を見る ↗</a></div>
       <div class="app-grid">
-        <article class="app-card app-pashakoma"><div class="app-card-visual"><div class="app-device"><img src="./assets/pashakoma-ui.png" alt="パシャコマの漫画編集画面" width="1320" height="2868" loading="lazy"></div><span class="visual-label">PHOTO EDITOR</span></div><div class="app-card-body"><p class="app-number">APP / 01</p><div class="app-title"><img src="./assets/pashakoma-icon.png" alt="" width="48" height="48" loading="lazy"><h4>パシャコマ</h4></div><p>写真を使って漫画を作成。編集内容の端末保存、画像・PDFへの書き出しまで実装。</p><p class="app-tech">Flutter · 画像編集 · ローカル保存</p><div class="store-links"><a href="https://apps.apple.com/jp/app/id6805789148" target="_blank" rel="noopener noreferrer">App Store ↗</a><a href="https://play.google.com/store/apps/details?id=com.mameoffice.pashakoma" target="_blank" rel="noopener noreferrer">Google Play ↗</a></div></div></article>
-        <article class="app-card app-classic"><div class="app-card-visual"><div class="app-device"><img src="./assets/itsudemoclassic-ui.png" alt="いつでもクラシックの楽曲一覧画面" width="1080" height="2340" loading="lazy"></div><span class="visual-label">AUDIO PLAYER</span></div><div class="app-card-body"><p class="app-number">APP / 02</p><div class="app-title"><img src="./assets/itsudemoclassic-icon.png" alt="" width="48" height="48" loading="lazy"><h4>いつでもクラシック</h4></div><p>クラシック音楽を選んで再生。楽曲のダウンロードとオフライン再生に対応。</p><p class="app-tech">Flutter · 音声再生 · オフライン保存</p><div class="store-links"><a href="https://apps.apple.com/jp/app/id6748042662" target="_blank" rel="noopener noreferrer">App Store ↗</a><a href="https://play.google.com/store/apps/details?id=com.itsudemoclassic" target="_blank" rel="noopener noreferrer">Google Play ↗</a></div></div></article>
-        <article class="app-card app-kinko"><div class="app-card-visual"><div class="app-device"><img src="./assets/kinko-sprint-ui.png" alt="金庫スプリントのダイヤル操作画面" width="1080" height="2340" loading="lazy"></div><span class="visual-label">CASUAL GAME</span></div><div class="app-card-body"><p class="app-number">APP / 03</p><div class="app-title"><img src="./assets/kinko-sprint-icon.png" alt="" width="48" height="48" loading="lazy"><h4>金庫スプリント</h4></div><p>ダイヤル操作で金庫を開けるゲーム。オンラインランキングと金庫の作成・共有にも対応。</p><p class="app-tech">Flutter · SQLite · Supabase</p><div class="store-links"><a href="https://apps.apple.com/jp/app/id6810457234" target="_blank" rel="noopener noreferrer">App Store ↗</a><a href="https://play.google.com/store/apps/details?id=com.mameoffice.kinkosprint" target="_blank" rel="noopener noreferrer">Google Play ↗</a></div></div></article>
+        <article class="app-card"><div class="app-head"><img src="./assets/pashakoma-icon.png" alt="" width="68" height="68" loading="lazy"><div><span>IMAGE / PDF</span><h4>パシャコマ</h4></div></div><p>写真から漫画を作成。画像編集、端末保存、画像・PDF出力を実装。</p><div class="app-links"><a href="https://apps.apple.com/jp/app/id6805789148" target="_blank" rel="noopener noreferrer">App Store ↗</a><a href="https://play.google.com/store/apps/details?id=com.mameoffice.pashakoma" target="_blank" rel="noopener noreferrer">Google Play ↗</a></div></article>
+        <article class="app-card"><div class="app-head"><img src="./assets/itsudemoclassic-icon.png" alt="" width="68" height="68" loading="lazy"><div><span>AUDIO / OFFLINE</span><h4>いつでもクラシック</h4></div></div><p>音声の再生とダウンロード、オフライン保存まで対応。</p><div class="app-links"><a href="https://apps.apple.com/jp/app/id6748042662" target="_blank" rel="noopener noreferrer">App Store ↗</a><a href="https://play.google.com/store/apps/details?id=com.itsudemoclassic" target="_blank" rel="noopener noreferrer">Google Play ↗</a></div></article>
+        <article class="app-card"><div class="app-head"><img src="./assets/kinko-sprint-icon.png" alt="" width="68" height="68" loading="lazy"><div><span>LOCAL / SERVER</span><h4>金庫スプリント</h4></div></div><p>端末データ、サーバー連携、オンラインランキング、共有機能を実装。</p><div class="app-links"><a href="https://apps.apple.com/jp/app/id6810457234" target="_blank" rel="noopener noreferrer">App Store ↗</a><a href="https://play.google.com/store/apps/details?id=com.mameoffice.kinkosprint" target="_blank" rel="noopener noreferrer">Google Play ↗</a></div></article>
       </div>
     </div></section>
 
-    <section class="section tools-section" id="tools" aria-labelledby="tools-title"><div class="container"><div class="section-heading"><div><p class="section-kicker">02 / WEB TOOLS</p><h2 id="tools-title"><span class="heading-line">小さな課題を、</span><span class="heading-line">使えるツールに。</span></h2></div><p>用途ごとに必要な機能を切り出し、公開後の運用まで続けています。</p></div>
-      <div class="tool-grid">
-        <article class="tool-card"><div class="tool-top"><span class="tool-icon" aria-hidden="true">↗</span><strong>08<span>本</span></strong></div><h3>SEO・ホームページ診断</h3><p>検索表示、問い合わせ導線、表示速度、構造化データなどを確認する無料ツール群。</p><ul><li><a href="https://seocheck.mameoffice.com/" target="_blank" rel="noopener noreferrer">マメSEOチェック ↗</a></li><li><a href="https://seocheck.mameoffice.com/dousen-check" target="_blank" rel="noopener noreferrer">導線チェッカー ↗</a></li></ul></article>
-        <article class="tool-card"><div class="tool-top"><span class="tool-icon" aria-hidden="true">⌖</span><strong>09<span>本</span></strong></div><h3>MEO・地域集客診断</h3><p>店舗情報の一致、地域キーワード、地図連携、来店前の案内を確認する無料ツール群。</p><ul><li><a href="https://meocheck.mameoffice.com/" target="_blank" rel="noopener noreferrer">マメMEOチェック ↗</a></li><li><a href="https://meocheck.mameoffice.com/nap-check" target="_blank" rel="noopener noreferrer">店舗情報一致チェッカー ↗</a></li></ul></article>
-        <article class="tool-card tool-saas"><div class="tool-top"><span class="tool-icon" aria-hidden="true">▦</span><strong>13<span>件</span></strong></div><h3>小規模Webサービス</h3><p>在庫、原価、店舗チェックなど、日々の業務にある小さな作業をWebサービスとして公開。</p><ul><li><a href="https://zaiko.mameoffice.com/" target="_blank" rel="noopener noreferrer">マメ在庫 ↗</a></li><li><a href="https://junten.mameoffice.com/" target="_blank" rel="noopener noreferrer">マメ巡店 ↗</a></li></ul></article>
-      </div><div class="tools-footer"><p>SEO・MEO診断ツール全17本は、一覧から確認できます。</p><a class="text-link" href="https://mameoffice.com/free-tools/" target="_blank" rel="noopener noreferrer">無料ツール一覧を見る <span aria-hidden="true">↗</span></a></div>
-    </div></section>
+    <section class="section technology-section" id="technology" aria-labelledby="technology-title"><div class="wrap tech-layout"><div class="tech-intro"><p class="section-label">04 / TECHNOLOGY CHOICE</p><h2 id="technology-title">先に言語を決めない。<br>環境に合わせて選ぶ。</h2><p>サーバー、既存の言語とDB、運用体制、更新頻度を確認します。新しく作る場合も、公開後に無理なく維持できることを判断基準にします。</p><div class="tech-criteria"><span>既存環境</span><span>必要な機能</span><span>運用と費用</span><span>変更のしやすさ</span></div></div><div class="tech-examples">
+      <article><span>01</span><div><h3>既存サーバーで運用するなら</h3><p>動いている言語、DB、公開手順を確認。必要な範囲から改修し、移行が必要なときは手順を分けます。</p></div></article>
+      <article><span>02</span><div><h3>Vercelを使うなら</h3><p>Next.js、Functions、外部DBなどを要件に合わせて組み合わせます。処理時間やファイルの保存先も踏まえて設計します。</p></div></article>
+      <article><span>03</span><div><h3>スマホで使うなら</h3><p>端末保存、API、画像・音声、ストア公開まで、利用場面と運用方法から設計します。</p></div></article>
+    </div></div></section>
 
-    <section class="section skills-section" id="skills" aria-labelledby="skills-title"><div class="container"><div class="section-heading"><div><p class="section-kicker">03 / SKILLS & PRACTICE</p><h2 id="skills-title"><span class="heading-line">技術を、</span><span class="heading-line">何に使ったか。</span></h2></div><p>言語の一覧だけでなく、実際の設計・実装・公開につながる経験として整理しました。</p></div>
-      <div class="skill-grid">
-        <article class="skill-card"><span class="skill-number">01</span><h3>Webシステム</h3><p>業務の流れや既存データを確認し、画面・API・DBを設計。Queueを使う非同期処理や公開後の管理にも対応します。</p><div class="tag-list"><span>PHP</span><span>Laravel</span><span>MySQL</span><span>Vue / Inertia.js</span><span>TypeScript</span></div></article>
-        <article class="skill-card"><span class="skill-number">02</span><h3>モバイルアプリ</h3><p>編集、音楽再生、ゲームなど異なる操作を設計。端末保存、外部サービスとの通信、ストア申請・更新まで対応します。</p><div class="tag-list"><span>Flutter</span><span>Dart</span><span>iOS / Android</span><span>SQLite</span><span>Supabase</span></div></article>
-        <article class="skill-card"><span class="skill-number">03</span><h3>品質と運用</h3><p>保存・通信・権限・失敗時の動作を確認。テスト、静的解析、自動デプロイを使って変更の影響を確かめます。</p><div class="tag-list"><span>Pest</span><span>Larastan</span><span>Playwright</span><span>Docker</span><span>GitHub Actions</span></div></article>
-      </div>
-    </div></section>
+    <section class="section process-section" id="process" aria-labelledby="process-title"><div class="wrap process-layout"><div><p class="section-label">05 / WORKING STYLE</p><h2 id="process-title">相談内容を、<br>実装できる形へ。</h2><p>ご担当者との会話で業務と優先順位をそろえ、進捗・判断点・リスクを共有しながら進めます。顧客対応を含めて担当できます。</p></div><ol><li><span>01</span><div><h3>聞く・確かめる</h3><p>目的、利用者、現状の画面やデータを確認。</p></div></li><li><span>02</span><div><h3>範囲と順番を決める</h3><p>必要な機能と先に解く課題を整理。</p></div></li><li><span>03</span><div><h3>作りながら共有する</h3><p>画面や動作を見てもらい、認識のずれを減らす。</p></div></li><li><span>04</span><div><h3>公開・運用する</h3><p>テスト、公開、更新後の確認まで担当。</p></div></li></ol></div></section>
 
-    <section class="section approach-section" id="approach" aria-labelledby="approach-title"><div class="container approach-grid"><div><p class="section-kicker">04 / APPROACH</p><h2 id="approach-title"><span class="heading-line">曖昧な仕様も、</span><span class="heading-line">整理して進める。</span></h2><p class="approach-lead">動いているシステムを変えるときほど、まず現在の状態を確かめます。既存画面、コード、データ、運用の流れを照らし合わせ、必要な変更を決めます。</p><a class="text-link" href="./projects/mamead.html">実装事例で確認する <span aria-hidden="true">↗</span></a></div><ol class="approach-list"><li><span>01</span><div><h3>現状を読み解く</h3><p>業務、既存コード、実データと仕様の食い違いを確認。</p></div></li><li><span>02</span><div><h3>変更範囲を決める</h3><p>使う人の操作、優先順位、失敗時の動作を整理。</p></div></li><li><span>03</span><div><h3>作って、確かめる</h3><p>小さな単位で実装し、テストと実画面で検証。</p></div></li><li><span>04</span><div><h3>公開後も見直す</h3><p>不具合や使いにくさを調べ、運用しながら改善。</p></div></li></ol></div></section>
+    <section class="tool-band" aria-labelledby="tool-title"><div class="wrap tool-band-inner"><div><p class="section-label">ALSO BUILT & OPERATED</p><h2 id="tool-title">小さなWebツールも、公開して育てる。</h2><p>SEO・MEOの無料診断17本や、小規模な業務向けWebサービスを公開・運用しています。</p></div><a class="plain-link" href="https://mameoffice.com/free-tools/" target="_blank" rel="noopener noreferrer">無料ツール一覧を見る ↗</a></div></section>
 
-    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="container contact-grid"><div><p class="section-kicker">05 / CONTACT</p><h2 id="contact-title"><span class="heading-line">開発のご相談は、</span><span class="heading-line">こちらから。</span></h2><p>既存システムの改修、データ移行、新規Webサービス、iOS・Androidアプリ開発。仕様が固まりきっていない段階から、必要な範囲を整理します。</p></div><div class="contact-options"><a href="https://cockpit.mameoffice.com/quote-request" target="_blank" rel="noopener noreferrer"><span>受託開発をご希望の方</span><strong>相談・見積依頼フォーム <span aria-hidden="true">↗</span></strong></a><a href="mailto:info@mameoffice.com?subject=%E6%BA%96%E5%A7%94%E4%BB%BB%E3%83%BB%E9%96%8B%E7%99%BA%E6%A1%88%E4%BB%B6%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87"><span>準委任・チーム開発をご希望の方</span><strong>メールで案件を相談する <span aria-hidden="true">↗</span></strong><small>週5日・フルリモートの案件を中心に検討中（2026年10月時点）</small></a></div></div></section>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="wrap contact-layout"><div><p class="section-label">06 / CONTACT</p><h2 id="contact-title">今ある課題を、<br>お聞かせください。</h2><p>新規開発、既存システムの改修、データ移行、アプリ開発。やりたいことが固まりきっていない段階でも、状況を整理しながら対応範囲を考えます。</p></div><div class="contact-options"><a href="https://cockpit.mameoffice.com/quote-request" target="_blank" rel="noopener noreferrer"><span>受託開発・個別のご依頼</span><strong>相談・見積依頼フォーム <i aria-hidden="true">↗</i></strong></a><a href="mailto:info@mameoffice.com?subject=%E6%BA%96%E5%A7%94%E4%BB%BB%E3%83%BB%E9%96%8B%E7%99%BA%E6%A1%88%E4%BB%B6%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87"><span>準委任・チーム開発のご相談</span><strong>メールで連絡する <i aria-hidden="true">↗</i></strong></a></div></div></section>
   </main>
-  <footer class="site-footer"><div class="container footer-inner"><div><span class="footer-brand">ENGINEER<span>.</span> PORTFOLIO</span><p>Laravel / Flutter / Web systems / Mobile apps</p></div><div class="footer-links"><a href="https://github.com/en-nagaojunichi" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://mameoffice.com/" target="_blank" rel="noopener noreferrer">MameOffice ↗</a><a href="#main">ページ上部へ ↑</a></div></div></footer>
+  <footer class="site-footer"><div class="wrap footer-inner"><div><strong>JUNICHI NAGAO<span>.</span></strong><p>IT Engineer / Web systems / Mobile apps</p></div><div><a href="https://github.com/en-nagaojunichi" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://mameoffice.com/" target="_blank" rel="noopener noreferrer">MameOffice ↗</a><a href="#main">ページ上部へ ↑</a></div></div></footer>
 </body>
 </html>

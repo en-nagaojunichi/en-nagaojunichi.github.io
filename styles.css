@@ -1,7 +1,7 @@
-:root{--ink:#172c40;--navy:#132c46;--navy-2:#1d3c5a;--blue:#266caa;--blue-soft:#e9f3fb;--mist:#f5f9fc;--line:#d9e5ee;--muted:#5d7183;--white:#fff;--radius:10px}
+:root{--ink:#1d3432;--navy:#183b37;--navy-2:#24564e;--blue:#176b5d;--blue-soft:#e8f3eb;--mist:#f7f8f4;--line:#dce6df;--muted:#586f68;--white:#fff;--radius:10px}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;color:var(--ink);background:var(--white);font-family:"Noto Sans JP",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+body{margin:0;color:var(--ink);background:var(--white);font-family:"Zen Kaku Gothic New","Noto Sans JP",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 button,a{-webkit-tap-highlight-color:transparent}
@@ -260,3 +260,54 @@ a:focus-visible{outline:3px solid #74b8e8;outline-offset:4px;border-radius:3px}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button,.header-link,.contact-options a{transition:none}}
 
 @media (max-width:360px){.app-title h4{font-size:17px}.app-title img{width:36px;height:36px}.flutter-project-title{align-items:flex-start;flex-direction:column;gap:.55rem}}
+
+/* Personal brand and case-study palette */
+.case-page .site-header{background:rgba(255,255,255,.96)}
+.case-page .brand{font:800 17px/1.1 "DM Sans",sans-serif;letter-spacing:.04em}
+.case-page .brand-mark{width:41px;height:41px;padding:0;border-radius:9px;font:800 16px "DM Sans",sans-serif;letter-spacing:0}
+.case-page .brand small{margin-top:5px;color:#6c8279;font:700 9px "DM Sans",sans-serif;letter-spacing:.19em}
+.case-page .main-nav a{color:#486158;font-size:13px;letter-spacing:0}
+.case-page .header-link{border-color:var(--deep,#183b37);background:var(--navy);color:#fff;font-size:12px}
+.case-page .header-link:hover{border-color:var(--blue);background:var(--blue)}
+.case-page .section-kicker{color:var(--blue)}
+.case-page .breadcrumb{color:#768b81}
+.case-page .case-hero{background:#f7f8f4;border-color:var(--line)}
+.case-page .case-hero p:not(.section-kicker):not(.breadcrumb),.case-page .case-section p{color:#586f68}
+.case-page .case-lead{color:var(--navy)!important}
+.case-page .case-panel{background:#fff;border-color:var(--line)}
+.case-page .case-visual{background:#edf3ee}
+.case-page .case-meta-wrap{background:var(--navy)}
+.case-page .case-meta-wrap .case-meta>div+div,.case-page .case-meta-wrap .case-meta>div:nth-child(3),.case-page .case-meta-wrap .case-meta>div:nth-child(4){border-color:#57766c}
+.case-page .case-meta-wrap .case-meta span{color:#a8d0bc}
+.case-page .case-section-tint{background:#f3f7f3}
+.case-page .case-next{background:#e8f2eb}
+.case-page .site-footer{background:#142f2e}
+.case-page .site-footer p{color:#a9c8b8}
+.case-page .footer-links a{color:#cee2d3}
+.case-page .button-primary:hover,.case-page .button-dark:hover{background:#245e50}
+.case-page .text-link{border-color:#a4c5b4}
+.case-page .tag-list span{border-color:#cbded1;background:#f0f6f1;color:#386654}
+.case-page .case-list li{color:#486658}
+.case-page .case-list li::before{background:#4c9a74}
+.case-page .case-flow{border-color:var(--line)}
+.case-page .case-stack dd{color:#486658}
+.case-page .case-section h2,.case-page .case-next h2{color:var(--navy)}
+.case-page .heading-line{white-space:normal}
+.flutter-page .case-panel-label{color:#398061}
+.flutter-page .case-panel>p:last-child,.flutter-page .flutter-art-caption,.flutter-page .flutter-project-lead,.flutter-page .flutter-capabilities p,.flutter-page .flutter-disclaimer{color:#586f68}
+.flutter-page .case-section-muted{background:#f3f7f3}
+.flutter-page .flutter-jump a{border-color:#cbded1;color:#234e42}
+.flutter-page .flutter-jump a:hover,.flutter-page .flutter-jump a:focus-visible{border-color:#6fa88d;background:#f1f7f2}
+.flutter-page .flutter-project{border-color:var(--line)}
+.flutter-page .flutter-project-art{background:#edf3ee}
+.flutter-page .flutter-project-art.classic{background:#eaf2ed}
+.flutter-page .flutter-project-art.kinko{background:#ecf0ec}
+.flutter-page .flutter-project-index,.flutter-page .flutter-capabilities span{color:var(--blue)}
+.flutter-page .flutter-capabilities article{border-color:var(--line)}
+@media(max-width:620px){
+  .case-page .brand{font-size:14px}
+  .case-page .brand-mark{width:35px;height:35px;font-size:13px}
+  .case-page .main-nav a{font-size:11px}
+  .case-page .header-link{font-size:11px;padding:8px 10px}
+}
+@media(max-width:360px){.case-page .header-link{font-size:10px;gap:5px}.case-page .main-nav a{font-size:10px}}

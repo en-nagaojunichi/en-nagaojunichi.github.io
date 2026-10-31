@@ -61,7 +61,6 @@ a:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; }
 .visual-sticker { position: absolute; top: 0; left: 0; z-index: 2; display: flex; flex-direction: column; justify-content: center; width: 82px; height: 82px; padding: 13px; background: var(--coral); font: 700 16px/.94 var(--latin); letter-spacing: -.06em; transform: rotate(-9deg); }
 .visual-sticker span { align-self: end; margin-top: 4px; font-size: 18px; }
 .visual-index { position: absolute; right: 18px; bottom: 6px; font: 700 11px var(--latin); }
-.hero-visual figcaption { margin-top: 12px; color: var(--muted); font-size: 12px; line-height: 1.5; }
 .hero-foot { display: flex; align-items: center; gap: 28px; padding: 15px 0; border-top: 1px solid var(--ink); font: 700 12px/1.2 var(--latin); letter-spacing: .05em; }
 .hero-foot span:nth-child(2) { font-family: var(--font); letter-spacing: 0; }
 .hero-foot-arrow { margin-left: auto; color: var(--coral); font-size: 22px; }
@@ -162,7 +161,6 @@ a:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; }
   .visual-frame { box-shadow: 7px 7px 0 rgba(24,26,27,.12); }
   .visual-stage::before { right: 17px; width: 35px; height: 35px; }
   .visual-stage::after { right: 29px; width: 11px; height: 11px; }
-  .hero-visual figcaption { font-size: 11px; }
   .hero-foot { gap: 15px; font-size: 10px; }
   .section { padding: 72px 0; }
   .section-intro { grid-template-columns: 1fr; gap: 19px; }

@@ -740,12 +740,6 @@ a:focus-visible {
   border: 1px solid var(--ink);
   filter: drop-shadow(13px 13px 0 rgba(24, 26, 27, 0.17));
 }
-.project-next .project-media figcaption {
-  align-self: flex-start;
-  margin: 27px 0 0;
-  color: #464b49;
-  font-size: 11px;
-}
 /* Released apps */
 .apps-section {
   padding: 115px 0;
@@ -1365,10 +1359,6 @@ a:focus-visible {
   .project-media {
     aspect-ratio: 1.25;
     padding: 15px;
-  }
-  .project-next .project-media figcaption {
-    margin-top: 17px;
-    font-size: 10px;
   }
   .app-showcase {
     grid-template-columns: 1fr;

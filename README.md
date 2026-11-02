@@ -1,8 +1,10 @@
 # PHP・Laravelエンジニアのポートフォリオ
 
-既存の業務システムの調査、仕様調整、Laravelでの改修・データ移行を担当します。週5日・フルリモート・長期の準委任案件を探しており、11月から参画できます。
+既存の業務システムの調査、仕様調整、Laravelでの改修・データ移行を担当します。週5日・できればフルリモート・長期の準委任案件を探しており、即日参画できます。
 
 **[ポートフォリオを見る](https://en-nagaojunichi.github.io/)** · [仕事の相談](https://en-nagaojunichi.github.io/#contact)
+
+[モバイルアプリとMameAdの動画を見る](https://en-nagaojunichi.github.io/#demos)
 
 ![ポートフォリオの紹介画像](assets/og-portfolio-sales.png)
 

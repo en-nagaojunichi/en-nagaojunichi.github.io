@@ -1069,6 +1069,48 @@ a:focus-visible {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px;
 }
+.demo-grid-three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.demo-inout .demo-frame video {
+  object-fit: contain;
+}
+.demo-credit {
+  display: block;
+  margin-top: 20px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+.demo-credit a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.project-inout {
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+}
+.project-inout .project-copy {
+  background: #fff;
+}
+.project-inout .inout-media {
+  padding: 60px 24px 28px;
+  background: #dde9e4;
+}
+.project-inout .inout-media img {
+  max-height: none;
+  border: 1px solid #b4c4bd;
+  filter: none;
+}
+.project-copy > .project-stage {
+  padding-left: 12px;
+  border-left: 2px solid #668274;
+  font-size: 12px;
+}
+@media (max-width: 1070px) {
+  .demo-grid-three {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 .demo-card {
   min-width: 0;
   background: var(--paper);
@@ -1110,6 +1152,13 @@ a:focus-visible {
   }
   .demo-grid {
     grid-template-columns: 1fr;
+  }
+  .project-inout {
+    grid-template-columns: 1fr;
+  }
+  .project-inout .project-media {
+    min-height: 0;
+    aspect-ratio: auto;
   }
   .demo-copy > p:not(:first-child) {
     min-height: 0;

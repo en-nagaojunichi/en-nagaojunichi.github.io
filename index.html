@@ -258,6 +258,24 @@
               </div>
             </div>
           </article>
+          <article class="project project-inout" id="mameinout">
+            <div class="project-copy">
+              <p class="project-kicker">PROJECT 04 — OPEN SOURCE</p>
+              <h3>MameInOut</h3>
+              <p class="project-short">紙の受付簿を、スマホとQRで。<br />入退出の記録を扱うOSS。</p>
+              <p>個人QRを受付スマホで読み取り、入室・退室の時刻と記録上の在室者を確認します。パスキー認証、受付端末の承認、履歴の訂正・CSV出力まで設計・実装しています。</p>
+              <p class="project-stage">開発中のセルフホスト型OSS。画面・動画には架空データを使用しています。</p>
+              <div class="project-meta"><span>Next.js / React</span><span>Hono</span><span>PostgreSQL</span><span>Passkey</span></div>
+              <div class="project-links">
+                <a class="circle-link" href="./projects/mameinout.html" aria-label="MameInOutの開発事例を見る">↗</a>
+                <a class="under-link" href="https://github.com/mameoffice/mame-inout" target="_blank" rel="noopener noreferrer">公開コードを見る ↗</a>
+              </div>
+            </div>
+            <figure class="project-media inout-media">
+              <span class="media-label">OPEN SOURCE / IN DEVELOPMENT</span>
+              <img src="./assets/mameinout/admin-home.png" alt="MameInOutの管理ホーム。記録上の在室者と最近の入退室を架空データで表示" width="1280" height="900" loading="lazy" />
+            </figure>
+          </article>
         </div>
       </section>
 
@@ -375,10 +393,10 @@
             <p class="section-no">VIDEO / SELECTED WORK</p>
             <div>
               <h2 id="demos-title">動く画面を、<br /><em>見てください。</em></h2>
-              <p>公開中のアプリとWebサービスの実際の操作画面を紹介します。</p>
+              <p>公開中のアプリ・Webサービスと、開発中のOSSの操作を紹介します。</p>
             </div>
           </div>
-          <div class="demo-grid">
+          <div class="demo-grid demo-grid-three">
             <article class="demo-card">
               <div class="demo-frame">
                 <video controls playsinline preload="none" poster="./assets/videos/apps-demo-poster.jpg" aria-label="公開中のiOS・Androidアプリ3本の紹介動画">
@@ -405,6 +423,22 @@
                 <h3>MameAd</h3>
                 <p>事業紹介ページの入力・プレビュー・保存と、SNS画像の作成結果を実画面で紹介します。掲載店舗・商品は撮影用のサンプルです。</p>
                 <a class="under-link" href="./projects/mamead.html">設計・実装を見る ↗</a>
+              </div>
+            </article>
+            <article class="demo-card demo-inout">
+              <div class="demo-frame">
+                <video controls playsinline preload="none" poster="./assets/mameinout/demo-overview.png" aria-label="MameInOutの利用者登録、QR入退室、在室・履歴確認の操作デモ">
+                  <source src="./assets/mameinout/overview.mp4" type="video/mp4" />
+                  <track kind="captions" src="./assets/mameinout/overview.ja.vtt" srclang="ja" label="日本語" />
+                  お使いのブラウザでは動画を再生できません。<a href="./assets/mameinout/overview.mp4">動画を開く</a>
+                </video>
+              </div>
+              <div class="demo-copy">
+                <p>03 / OPEN SOURCE</p>
+                <h3>MameInOut</h3>
+                <p>QRによる入室・退室から在室・履歴の確認まで。開発版の架空データによる操作デモです。約1分56秒・音声付き。</p>
+                <a class="under-link" href="./projects/mameinout.html">画面と設計を見る ↗</a>
+                <small class="demo-credit">音声：VOICEVOX:四国めたん／音楽：BGMer「科学と学習」<br /><a href="https://github.com/mameoffice/mame-inout/blob/main/docs/videos/README.md" target="_blank" rel="noopener noreferrer">収録内容・クレジット</a></small>
               </div>
             </article>
           </div>
@@ -468,7 +502,7 @@
             <div class="skill-row">
               <span>02 / WEB</span>
               <h3>Webシステム</h3>
-              <p>PHP、Laravel、Next.js、TypeScript、Rails、Vue、API、MySQL</p>
+              <p>PHP、Laravel、Next.js、React、TypeScript、Hono、Rails、Vue、API、MySQL、PostgreSQL、Prisma</p>
             </div>
             <div class="skill-row">
               <span>03 / APP</span>
@@ -483,7 +517,7 @@
             <div class="skill-row">
               <span>05 / TEST</span>
               <h3>テスト</h3>
-              <p>Pest、PHPUnit、機能テスト、移行後データの検証</p>
+              <p>Pest、PHPUnit、Vitest、Playwright、機能テスト、実DBを使う結合テスト、移行後データの検証</p>
             </div>
             <div class="skill-row">
               <span>06 / RUN</span>

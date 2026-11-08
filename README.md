@@ -4,7 +4,7 @@
 
 **[ポートフォリオを見る](https://en-nagaojunichi.github.io/)** · [仕事の相談](https://en-nagaojunichi.github.io/#contact)
 
-[モバイルアプリとMameAdの動画を見る](https://en-nagaojunichi.github.io/#demos)
+[モバイルアプリ・MameAd・MameInOutの動画を見る](https://en-nagaojunichi.github.io/#demos)
 
 ![ポートフォリオの紹介画像](assets/og-portfolio-sales.png)
 
@@ -13,6 +13,7 @@
 - **[業務システムのデータ移行](https://en-nagaojunichi.github.io/#works)** — データ項目の照合、移行仕様の整理、Laravelでの移行処理、移行後の検証を担当しました。
 - **[既存Laravelシステムの改修](https://en-nagaojunichi.github.io/#works)** — 既存コードの調査、機能の移植、認証と不具合の改修を担当しました。
 - **[MameAd](projects/mamead.html)** — 店舗・事業者向けのWebサービス。紹介ページ、動画、SNS素材の作成から公開後の管理まで。 [サービスを見る](https://mamead.mameoffice.com/)
+- **[MameInOut](projects/mameinout.html)** — スマホとQRで入室・退室を記録するセルフホスト型OSS。Next.js・React・Hono・PostgreSQLで、パスキー認証、受付端末の承認、履歴・CSV出力を実装しています。現在は開発中です。 [公開コード](https://github.com/mameoffice/mame-inout) · [操作デモ](https://en-nagaojunichi.github.io/projects/mameinout.html#demo)
 - **[Flutterアプリ3本](projects/flutter.html)** — 写真編集の「パシャコマ」、音楽再生の「いつでもクラシック」、ゲームの「金庫スプリント」。いずれもApp StoreとGoogle Playで公開しています。
 - **[業務画面の公開用サンプル](projects/nextjs.html)** — Next.jsで新しく制作した画面例です。
 - **[SEO・MEOの無料診断ツール](https://mameoffice.com/free-tools/)** — 公開・運用している17本のツールです。

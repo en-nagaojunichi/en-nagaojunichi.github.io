@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f3ed" />
+    <meta name="description" content="MameInOutの開発事例。Next.js・React・Hono・PostgreSQLで、QRによる入退出記録、パスキー認証、権限分離、履歴とCSV出力を設計・実装したセルフホスト型OSSです。" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:title" content="MameInOut｜QR入退出管理システムの開発事例" />
+    <meta property="og:description" content="紙の受付簿を、スマホとQRで。画面・操作デモ・公開コードから、設計と実装を紹介します。" />
+    <meta property="og:url" content="https://en-nagaojunichi.github.io/projects/mameinout.html" />
+    <meta property="og:image" content="https://en-nagaojunichi.github.io/assets/mameinout/demo-overview.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://en-nagaojunichi.github.io/projects/mameinout.html" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800;900&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../home-playful.css" />
+    <link rel="stylesheet" href="../mameinout-case.css" />
+    <title>MameInOut｜Next.js・HonoによるQR入退出管理システムの開発事例</title>
+  </head>
+  <body class="inout-case">
+    <a class="skip" href="#main">本文へ移動</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="../index.html" aria-label="ITエンジニアのポートフォリオ トップ"><span class="brand-mark">N<span>●</span></span><span class="brand-copy">IT ENGINEER<small>PORTFOLIO</small></span></a>
+        <nav aria-label="メインナビゲーション"><a href="../index.html#about">できること</a><a href="../index.html#works">つくったもの</a><a href="../index.html#skills">技術・経験</a><a href="../index.html#contact">連絡する</a></nav>
+        <a class="header-action" href="../index.html#contact"><span>相談する</span><span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+    <main id="main">
+      <div class="shell inout-breadcrumb"><a href="../index.html">PORTFOLIO</a><span aria-hidden="true">/</span><a href="../index.html#works">WORKS</a><span aria-hidden="true">/</span><span>MameInOut</span></div>
+      <section class="inout-hero" aria-labelledby="inout-title">
+        <div class="shell inout-hero-grid">
+          <div>
+            <p class="section-no">OPEN SOURCE / NEXT.JS + HONO</p>
+            <h1 id="inout-title">MameInOut</h1>
+            <p class="inout-lead">紙の受付簿を、<br />スマホとQRで。</p>
+            <p>入口のスマホで個人QRを読み取り、入室・退室の時刻を記録。管理者は、記録上の在室者と過去の入退出を確認できます。画面・API・DBから導入・運用の手順まで、ひとつのOSSとして開発しています。</p>
+            <p class="inout-stage">開発中のセルフホスト型OSSです。正式リリース・導入用イメージの一般配布は準備中です。</p>
+            <div class="inout-actions"><a class="pill-link pill-coral" href="https://github.com/mameoffice/mame-inout" target="_blank" rel="noopener noreferrer">公開コードを見る <span aria-hidden="true">↗</span></a><a class="under-link" href="#demo">操作動画を見る ↓</a></div>
+          </div>
+          <figure class="inout-main-visual"><img src="../assets/mameinout/admin-home.png" alt="MameInOut管理ホーム。架空データで在室人数、要確認の人数、最近の入退室を表示" width="1280" height="900" fetchpriority="high" /><figcaption>管理ホーム / 架空データによる開発版の画面</figcaption></figure>
+        </div>
+        <dl class="shell inout-facts"><div><dt>担当</dt><dd>企画・設計・実装・検証</dd></div><div><dt>画面 / API</dt><dd>Next.js・React / Hono</dd></div><div><dt>データベース</dt><dd>PostgreSQL / Prisma</dd></div><div><dt>公開形態</dt><dd>無料OSS / MIT</dd></div></dl>
+      </section>
+      <section class="inout-section" aria-labelledby="purpose-title">
+        <div class="shell inout-split"><div><p class="section-no">01 / PURPOSE</p><h2 id="purpose-title">入口で記録して、<br />管理者の画面で確認。</h2><p>学習塾・自習室、習い事教室、小規模な事業所などでの利用を想定しています。紙の受付簿への記入や転記を減らし、日々の操作をスマホのブラウザで行うためのシステムです。</p></div><div class="inout-feature-list"><article><span>01</span><div><h3>利用者へQRを配る</h3><p>管理者が利用者を登録し、個人QRを発行・印刷します。入退出する人のアカウントは不要です。</p></div></article><article><span>02</span><div><h3>入室・退室を記録する</h3><p>承認した受付端末で入室・退室を選び、QRを読み取ります。モードは自動で交互に変わりません。</p></div></article><article><span>03</span><div><h3>履歴を確認し、必要なら訂正する</h3><p>在室一覧と履歴を確認。理由付きの訂正・取消・手動追加、CSVでの保存に対応しています。</p></div></article></div></div>
+        <figure class="shell inout-use-cases"><img src="../assets/mameinout/use-cases.png" alt="学習塾・自習室、習い事教室、事業所・会員制スペースでの利用を説明するイラスト" width="1672" height="941" loading="lazy" /><figcaption>利用を想定した場面のイラストです。実際の導入事例ではありません。</figcaption></figure>
+      </section>
+      <section class="inout-section inout-demo-section" id="demo" aria-labelledby="demo-title">
+        <div class="shell"><div class="inout-split inout-demo-heading"><div><p class="section-no">02 / DEMO</p><h2 id="demo-title">登録から、<br />入退室の確認まで。</h2></div><p>約1分56秒の操作デモです。利用者登録、入室、在室確認、退室、履歴の順に紹介します。日本語ナレーション・BGM付きで、字幕も選べます。</p></div><div class="inout-video"><video controls playsinline preload="none" poster="../assets/mameinout/demo-overview.png" aria-label="MameInOutの利用場面とQR入退出操作デモ"><source src="../assets/mameinout/overview.mp4" type="video/mp4" /><track kind="captions" src="../assets/mameinout/overview.ja.vtt" srclang="ja" label="日本語" />お使いのブラウザでは動画を再生できません。<a href="../assets/mameinout/overview.mp4">動画を開く</a></video></div><div class="inout-video-notes"><p>開発版の架空データによる実操作の収録です。カメラにはテスト映像、パスキーには仮想認証器を使っています。冒頭の生成映像は利用場面のイメージです。</p><p>音声：VOICEVOX:四国めたん / 音楽：BGMer「科学と学習」<br /><a href="https://github.com/mameoffice/mame-inout/blob/main/docs/videos/README.md" target="_blank" rel="noopener noreferrer">動画の内容・素材クレジット ↗</a></p></div></div>
+      </section>
+      <section class="inout-section" aria-labelledby="design-title">
+        <div class="shell inout-split"><div><p class="section-no">03 / ENGINEERING</p><h2 id="design-title">使う人の役割を、<br />APIでも分ける。</h2><p>画面を隠すだけにせず、認証・権限・記録の整合性をAPIとデータベースで扱います。入退出を記録する操作と、利用者や履歴を管理する操作を分けて設計しました。</p><figure class="inout-phone"><img src="../assets/mameinout/administrators-mobile.png" alt="MameInOutのスマホ向け管理者一覧。架空の管理者情報を表示" width="390" height="900" loading="lazy" /><figcaption>スマホの管理画面</figcaption></figure></div><div class="inout-decisions"><article><h3>パスキー認証と受付端末の承認</h3><p>管理者はパスキーでログイン。受付端末にはQRを読み取るための権限を与え、名簿全体・履歴・CSVなどを返さないようにしています。</p></article><article><h3>二重送信と同時操作への対応</h3><p>同じ受付要求の再送では最初の結果を返し、DBの制約・排他・トランザクションを組み合わせます。利用者ごとの未終了の在室記録は最大1件です。</p></article><article><h3>画面・API・DBの責任を分ける</h3><p>Next.jsが画面、Honoが認証・認可と業務処理を担当します。PostgreSQLへの接続と操作をAPI側に集約し、Next.jsにDB資格情報を渡しません。</p></article><article><h3>失敗する経路も検査する</h3><p>Vitest、実PostgreSQLを使う結合テスト、PlaywrightによるE2Eを用意。権限違反、二重送信、同時操作、通信失敗などを検査対象にしています。</p></article></div></div>
+      </section>
+      <section class="inout-section inout-stack-section" aria-labelledby="stack-title"><div class="shell inout-split"><div><p class="section-no">04 / STACK</p><h2 id="stack-title">導入する人にも、<br />改修する人にも。</h2><p>Docker Composeで画面・API・専用DBをまとめる構成です。公開リポジトリに、利用ガイド、システム構成、開発・DBの説明を揃えています。</p></div><dl class="inout-stack"><div><dt>画面</dt><dd>Next.js / React / TypeScript</dd></div><div><dt>API・入力検証</dt><dd>Hono / Node.js / Zod</dd></div><div><dt>認証</dt><dd>Better Auth / WebAuthn</dd></div><div><dt>データベース</dt><dd>PostgreSQL / Prisma</dd></div><div><dt>実行環境・検査</dt><dd>Docker Compose / Caddy / Vitest / Playwright</dd></div></dl></div></section>
+      <section class="inout-section" aria-labelledby="source-title"><div class="shell inout-split"><div><p class="section-no">05 / SOURCE &amp; GUIDES</p><h2 id="source-title">コードから、<br />確かめられます。</h2><p>現在は開発中です。空の標準サーバーへの導入や外部バックアップの運用など、確認が残る項目を公開資料に記載しています。試す場合は架空データを使用してください。</p><p>ソフトウェアは無料のMITライセンスです。サーバー・ドメイン・バックアップ先などの運用費は設置者が負担します。</p><p class="inout-limit">QRの貸し借りや退室忘れにより、記録と実際の滞在が異なる場合があります。扉の解錠や通信できない状態での確定記録は行いません。</p></div><div class="inout-source-links"><a href="https://github.com/mameoffice/mame-inout" target="_blank" rel="noopener noreferrer"><span>GitHub</span><strong>公開コード・README</strong><b aria-hidden="true">↗</b></a><a href="https://github.com/mameoffice/mame-inout/blob/main/docs/usage.md" target="_blank" rel="noopener noreferrer"><span>USER GUIDE</span><strong>使い方・テスト受付</strong><b aria-hidden="true">↗</b></a><a href="https://github.com/mameoffice/mame-inout/blob/main/docs/overview.md" target="_blank" rel="noopener noreferrer"><span>STATUS</span><strong>機能と確認済みの範囲</strong><b aria-hidden="true">↗</b></a><a href="../index.html#works"><span>PORTFOLIO</span><strong>ほかの開発事例を見る</strong><b aria-hidden="true">↗</b></a></div></div></section>
+    </main>
+    <footer class="site-footer"><div class="shell footer-inner"><span>© 2026</span><div><a href="https://github.com/en-nagaojunichi" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="../index.html#contact">仕事の相談 ↗</a><a href="#main">ページ上部へ ↑</a></div></div></footer>
+  </body>
+</html>
